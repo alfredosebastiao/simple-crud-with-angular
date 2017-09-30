@@ -6,8 +6,8 @@ import { LoginComponent } from './login/login.component';
 import {CreateAccountComponent} from './create-account/create-account.component';
 
 const appRoutes: Routes = [
+  { path: 'create-accoun', component: CreateAccountComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'create-account', component: CreateAccountComponent},
   { path: '', component: LoginComponent}
 ];
 @NgModule({
