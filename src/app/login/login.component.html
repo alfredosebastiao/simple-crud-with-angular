@@ -3,31 +3,27 @@
 
   </div>
   <div class="col-xs-4 col-md-4 text-center">
-    <div class="card mb-5">
+    <div class="card mb-4">
       <div class="card-body">
         <h4 class="card-title">Faca o Login</h4>
         <form>
           <div class="input-group">
             <span class="input-group-addon"><i class="material-icons">account_circle</i></span>
-            <input id="user" type="text" class="form-control" name="user" value="" placeholder="User">
+            <input id="user" type="text" class="form-control" name="user" [(ngModel)]="user.userName" placeholder="Username">
           </div>
           <br>
           <div class="input-group">
             <span class="input-group-addon"><i class="material-icons">lock</i></span>
-            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            <input id="password" type="password" class="form-control" name="password" [(ngModel)]="user.senha" placeholder="Password">
           </div>
           <br>
-          <button type="button" class="btn btn-primary float-left">Login</button>
+          <button type="button" class="btn btn-primary float-left" (click)="autenticar()">Login</button>
         </form>
-
       </div>
       <div class="card-footer bg-transparent ">
-        <span>Nao possui conta?</span> <a routerLink="create-account">Criar Conta</a>
+        <span>Nao possui conta?</span> <a routerLink="/create-account">Criar Conta</a>
       </div>
     </div>
   </div>
-
-
-
 </div>
 

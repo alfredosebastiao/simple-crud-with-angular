@@ -1,3 +1,47 @@
-<p>
-  create-account works!
-</p>
+<div class="row">
+  <div class="col-xs-4 col-md-4">
+
+  </div>
+  <div class="col-xs-4 col-md-4 text-center">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h4 class="card-title">Crie uma conta</h4>
+        <form>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="material-icons">perm_identity</i></span>
+            <input id="name" type="text" class="form-control" name="name" value="" placeholder="Nome Completo">
+          </div>
+          <br>
+
+
+          <div class="input-group">
+            <span class="input-group-addon"><i class="material-icons">email</i></span>
+            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email">
+          </div>
+          <br>
+
+          <div class="input-group">
+            <span class="input-group-addon"><i class="material-icons">account_circle</i></span>
+            <input id="user" type="text" class="form-control" name="user" value="" placeholder="User">
+          </div>
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="material-icons">lock</i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+          <br>
+
+          <div class="input-group">
+            <span class="input-group-addon"><i class="material-icons">lock</i></span>
+            <input id="password-confirm" type="password" class="form-control" name="password-confirm" placeholder="Confirmar Password">
+          </div>
+          <br>
+
+          <button type="button" class="btn btn-primary float-right">Registar</button>
+        </form>
+      </div>
+      <div class="card-footer bg-transparent ">
+        <button type="button" class="btn btn-light float-left" routerLink="/login">Voltar</button>
+    </div>
+  </div>
+</div>
