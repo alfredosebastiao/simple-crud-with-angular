@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import {AuthService} from './login/auth.service';
 import { User } from './login/User';
+import { CreateProductModalComponent } from './create-product-modal/create-product-modal.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { User } from './login/User';
     NavBarComponent,
     LoginComponent,
     CreateAccountComponent,
-    HomeComponent
+    HomeComponent,
+    CreateProductModalComponent
   ],
   imports: [
     BrowserModule,
